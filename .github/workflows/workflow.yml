@@ -22,11 +22,12 @@ jobs:
               id: build
               run: |
                 echo "Building"
-                echo "variable=${{inputs.result}}" >> "$GITHUB_OUTPUT"
+                echo "resultado=${{ github.event.inputs.result }}" >> $GITHUB_OUTPUT
 
     deploy:
         runs-on: ubuntu-latest
-        if: ${{ needs.build.outputs.build_status == 'success' }}    
+        needs: build
+        if: ${{needs.build.outputs.build_status == 'success' }}    
         steps:      
             - name: Deploy                                     
               run: |
