@@ -15,3 +15,5 @@ Encontrar el error en un flujos de trabajo.
 Actualización automática - jueves, 20 de marzo de 2025, 09:48:08 CET
 -e 
 Actualización automática - jueves, 20 de marzo de 2025, 10:11:27 CET
+-e 
+Corrección automática tras fallos en CI - jueves, 20 de marzo de 2025, 10:30:50 CET
